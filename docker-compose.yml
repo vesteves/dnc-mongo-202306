@@ -1,0 +1,8 @@
+version: "3"
+services:
+  mongodb:
+    container_name: dnc_mongo_db
+    restart: unless-stopped
+    image: mongo:latest
+    ports:
+      - "27017:27017"
